@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Character
   characterName: Dude
   health: 100
-  attack: 0
-  defence: 0
-  ultimate: Postman punch
-  ultimateDamage: 0
-  story: 
-  description: 
+  attack: 1
+  defence: 1
+  ultimate: 1
+  attackDescription: 1
+  defenseDescription: 1
+  speedDescription: 1
+  ultimateDescription: 1
+  story: 1
+  shortDescription: 1

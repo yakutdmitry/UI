@@ -5,43 +5,50 @@ using UnityEngine.LowLevelPhysics2D;
 
 public class UIController : MonoBehaviour
 {
-    public Character selectedCharacter;
-    public TextMeshProUGUI shortDescription;
-    public TextMeshProUGUI characterName;
+    public DataLoader selectedCharacter;
+    public TextMeshProUGUI shortDescriptionUI;
+    public TextMeshProUGUI characterNameUI;
 
     [Header("Stats")]
-    public TextMeshProUGUI attack;
-    public TextMeshProUGUI defense;
-    public TextMeshProUGUI health;
-    public TextMeshProUGUI ultimate;
+    public TextMeshProUGUI attackUI;
+    public TextMeshProUGUI defenseUI;
+    public TextMeshProUGUI healthUI;
+    public TextMeshProUGUI ultimateUI;
     [Header("Stats Descriptions")]
-    public TextMeshProUGUI attackDesctiption;
-    public TextMeshProUGUI defenseDesctiption;
-    public TextMeshProUGUI speedDesctiption;
-    public TextMeshProUGUI ultimateDesctiption;
+    public TextMeshProUGUI attackDesctiptionUI;
+    public TextMeshProUGUI defenseDesctiptionUI;
+    public TextMeshProUGUI speedDesctiptionUI;
+    public TextMeshProUGUI ultimateDesctiptionUI;
 
     public GameObject[] menusToHide;
 
-    private void Start()
+
+
+    private void OnEnable()
     {
-        selectedCharacter = GameObject.FindWithTag("Player").GetComponent<Character>();
+        selectedCharacter = GameObject.FindWithTag("Character").GetComponent<DataLoader>();
+        Debug.Log("attackUI: " + attackUI);
+        Debug.Log("attackUI.text: " + (attackUI == null ? "NULL" : "OK"));
+        Debug.Log(selectedCharacter.data);
+        Debug.Log("DATA TYPE: " + selectedCharacter.data.GetType());
+        Debug.Log("SO attack: " + selectedCharacter.data.attack);
         Show();
     }
 
     public void Show()
     {
-        attack.text = selectedCharacter.attack.ToString();
-        defense.text = selectedCharacter.defence.ToString();
-        health.text = selectedCharacter.health.ToString();
-        ultimate.text = selectedCharacter.ultimate.ToString();
+        attackUI.text = selectedCharacter.data.attack.ToString();
+        defenseUI.text = selectedCharacter.data.defence.ToString();
+        healthUI.text = selectedCharacter.data.health.ToString();
+        ultimateUI.text = selectedCharacter.data.ultimate.ToString();
 
-        attackDesctiption.text = selectedCharacter.attackDescription;
-        defenseDesctiption.text = selectedCharacter.defenseDescription;
-        speedDesctiption.text = selectedCharacter.speedDescription;
-        ultimateDesctiption.text = selectedCharacter.ultimateDescription;
+        attackDesctiptionUI.text = selectedCharacter.data.attackDescription;
+        defenseDesctiptionUI.text = selectedCharacter.data.defenseDescription;
+        speedDesctiptionUI.text = selectedCharacter.data.speedDescription;
+        ultimateDesctiptionUI.text = selectedCharacter.data.ultimateDescription;
 
-        characterName.text = selectedCharacter.characterName;
-        shortDescription.text = selectedCharacter.shortDescription;
+        characterNameUI.text = selectedCharacter.data.characterName;
+        shortDescriptionUI.text = selectedCharacter.data.shortDescription;
     }
 
     public void Hide()
