@@ -39,10 +39,10 @@ public class UIController : MonoBehaviour
 
     public void Show()
     {
-        attackUI.text = selectedCharacter.data.attack.ToString();
-        defenseUI.text = selectedCharacter.data.defence.ToString();
-        healthUI.text = selectedCharacter.data.health.ToString();
-        ultimateUI.text = selectedCharacter.data.ultimate.ToString();
+        attackUI.text = "Attack: " + selectedCharacter.data.attack.ToString();
+        defenseUI.text = "Defense: " + selectedCharacter.data.defence.ToString();
+        healthUI.text = "Health: " + selectedCharacter.data.health.ToString();
+        ultimateUI.text = "Ultimate: " + selectedCharacter.data.ultimate.ToString();
 
         attackDesctiptionUI.text = selectedCharacter.data.attackDescription;
         defenseDesctiptionUI.text = selectedCharacter.data.defenseDescription;
