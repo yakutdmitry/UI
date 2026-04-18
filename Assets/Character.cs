@@ -8,10 +8,18 @@ public class Character : ScriptableObject
     public int health;
     public int attack;
     public int defence;
-    public string ultimate;
-    public int ultimateDamage;
+    public int ultimate;
+    
+    [Header("Stats desctiption")]
+    public string attackDescription;
+    public string defenseDescription;
+    public string speedDescription;
+    public string ultimateDescription;   
+    
     [Header("Story")] 
+    [TextArea(3, 6)]
     public string story;
-    public string description;
+    [TextArea(3, 6)]
+    public string shortDescription;
     
 }
