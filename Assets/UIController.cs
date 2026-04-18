@@ -8,7 +8,8 @@ public class UIController : MonoBehaviour
     public DataLoader selectedCharacter;
     public TextMeshProUGUI shortDescriptionUI;
     public TextMeshProUGUI characterNameUI;
-
+    public GameObject[] menusToHide;
+    
     [Header("Stats")]
     public TextMeshProUGUI attackUI;
     public TextMeshProUGUI defenseUI;
@@ -19,8 +20,9 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI defenseDesctiptionUI;
     public TextMeshProUGUI speedDesctiptionUI;
     public TextMeshProUGUI ultimateDesctiptionUI;
-
-    public GameObject[] menusToHide;
+    [Header("Story")]
+    public TextMeshProUGUI storyUI;
+    
 
 
 
@@ -49,6 +51,9 @@ public class UIController : MonoBehaviour
 
         characterNameUI.text = selectedCharacter.data.characterName;
         shortDescriptionUI.text = selectedCharacter.data.shortDescription;
+
+        storyUI.text = selectedCharacter.data.story;
+
     }
 
     public void Hide()

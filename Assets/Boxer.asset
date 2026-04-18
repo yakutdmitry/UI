@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: Boxer
   m_EditorClassIdentifier: Assembly-CSharp::Character
   characterName: Dude
-  health: 100
-  attack: 1
-  defence: 1
-  ultimate: 1
-  attackDescription: 1
-  defenseDescription: 1
-  speedDescription: 1
-  ultimateDescription: 1
-  story: 1
-  shortDescription: 1
+  health: 150
+  attack: 3
+  defence: 2
+  ultimate: 25
+  attackDescription: Powerful close-range punches with solid burst damage.
+  defenseDescription: Can withstand more hits than a regular character thanks to
+    a tight boxing guard.
+  speedDescription: not the fastest, but far from slow.
+  ultimateDescription: "a rapid flurry of punches delivered like he\u2019s dropping
+    off packages straight to the opponent\u2019s face."
+  story: "Boxer is an ordinary guy from the neighborhood who trained in an old gym.
+    He\u2019s not a superhero or a mutant \u2014 just a tough man who knows how to
+    take a hit and return it twice as hard. His ultimate, Postman, is a legendary
+    combo he invented back when he worked as a courier."
+  shortDescription: "A tough close\u2011range fighter with solid durability and a
+    signature flurry attack called Postman."
