@@ -1,0 +1,25 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "NewCharacter", menuName = "Characters/Stats")]
+public class Character : ScriptableObject
+{
+    [Header("Name & Stats")]
+    public string characterName;
+    public int health;
+    public int attack;
+    public int defence;
+    public int ultimate;
+    
+    [Header("Stats desctiption")]
+    public string attackDescription;
+    public string defenseDescription;
+    public string speedDescription;
+    public string ultimateDescription;   
+    
+    [Header("Story")] 
+    [TextArea(3, 6)]
+    public string story;
+    [TextArea(3, 6)]
+    public string shortDescription;
+    
+}
