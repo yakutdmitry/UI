@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 84848598}
   - component: {fileID: 84848597}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5722,7 +5722,7 @@ GameObject:
   - component: {fileID: 1603749436}
   - component: {fileID: 1603749435}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Story
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5835,7 +5835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7bbe7ee63e60f648a6d9675d72585c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ad7306a8216bf8948bad4d2ddac12f18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5971,7 +5971,7 @@ GameObject:
   - component: {fileID: 1647153613}
   - component: {fileID: 1647153612}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Upgrades
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6217,7 +6217,7 @@ GameObject:
   - component: {fileID: 1717621996}
   - component: {fileID: 1717621995}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6458,6 +6458,7 @@ GameObject:
   - component: {fileID: 1731960868}
   - component: {fileID: 1731960867}
   - component: {fileID: 1731960870}
+  - component: {fileID: 1731960871}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -6529,9 +6530,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1557682910}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
-        m_MethodName: Show
+      - m_Target: {fileID: 1731960871}
+        m_TargetAssemblyTypeName: Sceneswitch, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6599,6 +6600,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 0
+--- !u!114 &1731960871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731960865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d65380491e821d4b9f1489abaff60d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sceneswitch
+  Scene: Loading Screen
 --- !u!1001 &1750454871
 PrefabInstance:
   m_ObjectHideFlags: 0
