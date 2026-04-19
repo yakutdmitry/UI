@@ -34,3 +34,8 @@ MonoBehaviour:
     force on the battlefield."
   shortDescription: A reinforced cybernetic fighter with strong durability and a
     devastating electric pulse shot.
+  attackLVL: 1
+  defenseLVL: 3
+  ultimateLVL: 3
+  speedLVL: 1
+  healthLvl: 0

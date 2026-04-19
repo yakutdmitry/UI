@@ -13,13 +13,27 @@ MonoBehaviour:
   m_Name: Ninja
   m_EditorClassIdentifier: Assembly-CSharp::Character
   characterName: Ninja
-  health: 0
-  attack: 0
-  defence: 0
-  ultimate: 0
-  attackDescription: 
-  defenseDescription: 
-  speedDescription: 
-  ultimateDescription: 
-  story: 
-  shortDescription: 
+  health: 110
+  attack: 4
+  defence: 1
+  ultimate: 40
+  speed: 5
+  attackDescription: "Fast precision strikes that deal high damage if the enemy is
+    caught off\u2011guard."
+  defenseDescription: "Relies on agility rather than toughness \u2014 can dodge hits
+    but doesn\u2019t withstand many direct blows."
+  speedDescription: "Extremely fast movement and attack speed, excels at repositioning
+    and hit\u2011and\u2011run tactics."
+  ultimateDescription: "Shadow Courier \u2014 a sudden burst of speed followed by
+    multiple invisible strikes delivered in a blink."
+  story: "A silent master of movement and deception, the Ninja trained in hidden
+    mountain temples where combat is treated as an art. He carries no weapons \u2014
+    his body is the blade. His ultimate, Shadow Courier, is a technique so fast that
+    enemies swear they were struck by a dozen blows at once."
+  shortDescription: "A lightning\u2011fast unarmed assassin who relies on agility
+    and precision, finishing enemies with the Shadow Courier technique."
+  attackLVL: 2
+  defenseLVL: 2
+  ultimateLVL: 3
+  speedLVL: 1
+  healthLvl: 0

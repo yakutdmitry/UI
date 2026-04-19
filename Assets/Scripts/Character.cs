@@ -23,4 +23,10 @@ public class Character : ScriptableObject
     [TextArea(3, 6)]
     public string shortDescription;
     
+    [Header("Upgrade lvls")]
+    public int attackLVL;
+    public int defenseLVL;
+    public int ultimateLVL;
+    public int speedLVL;
+    public int healthLvl;
 }
