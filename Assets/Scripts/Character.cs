@@ -9,6 +9,7 @@ public class Character : ScriptableObject
     public int attack;
     public int defence;
     public int ultimate;
+    public int speed;
     
     [Header("Stats desctiption")]
     public string attackDescription;

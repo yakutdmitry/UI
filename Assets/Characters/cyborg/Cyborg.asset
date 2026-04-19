@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f80fe92f92aba043b4102bae8d0c3fd, type: 3}
+  m_Name: Cyborg
+  m_EditorClassIdentifier: Assembly-CSharp::Character
+  characterName: Cyborg
+  health: 160
+  attack: 3
+  defence: 3
+  ultimate: 15
+  speed: 2
+  attackDescription: "Heavy augmented strikes combined with a built\u2011in electric
+    pistol capable of firing charged energy rounds."
+  defenseDescription: Reinforced cybernetic plating absorbs incoming damage and reduces
+    impact from heavy hits.
+  speedDescription: Moderate mobility with short mechanical bursts that allow quick
+    repositioning despite his heavy frame.
+  ultimateDescription: "Electro Pulse Shot \u2014 a powerful high\u2011voltage projectile
+    that pierces defenses and briefly stuns the target."
+  story: "Once a top\u2011tier fighter critically injured in a covert operation,
+    he was rebuilt using experimental cybernetic technology. The reconstruction enhanced
+    his strength, durability, and reflexes, but left him struggling to balance his
+    remaining humanity with the cold efficiency of his mechanical body. His built\u2011in
+    electric pistol and the devastating Electro Pulse Shot make him a formidable
+    force on the battlefield."
+  shortDescription: A reinforced cybernetic fighter with strong durability and a
+    devastating electric pulse shot.

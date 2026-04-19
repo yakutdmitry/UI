@@ -15,6 +15,7 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI defenseUI;
     public TextMeshProUGUI healthUI;
     public TextMeshProUGUI ultimateUI;
+    public TextMeshProUGUI speedUI;
     [Header("Stats Descriptions")]
     public TextMeshProUGUI attackDesctiptionUI;
     public TextMeshProUGUI defenseDesctiptionUI;
@@ -43,7 +44,8 @@ public class UIController : MonoBehaviour
         defenseUI.text = "Defense: " + selectedCharacter.data.defence.ToString();
         healthUI.text = "Health: " + selectedCharacter.data.health.ToString();
         ultimateUI.text = "Ultimate: " + selectedCharacter.data.ultimate.ToString();
-
+        speedUI.text = "Speed: " + selectedCharacter.data.speed;
+        
         attackDesctiptionUI.text = selectedCharacter.data.attackDescription;
         defenseDesctiptionUI.text = selectedCharacter.data.defenseDescription;
         speedDesctiptionUI.text = selectedCharacter.data.speedDescription;
